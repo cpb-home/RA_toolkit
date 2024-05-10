@@ -1,0 +1,36 @@
+.item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.imgCont {
+    width: 100px;
+}
+
+.imgCont img {
+    width: 100%;
+}
+
+.infoCont {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    justify-content: flex-start;
+    width: 300px;
+    padding: 10px;
+}
+
+.title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.text {
+    color: grey;
+}
+
+.inFavorites {
+    margin-top: 40px;
+}

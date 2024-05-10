@@ -5,8 +5,9 @@
 }
 
 body {
-  margin: 0;
-  display: flex;
   min-width: 320px;
   min-height: 100vh;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(255, 249, 212);
 }
