@@ -4,7 +4,6 @@ import styles from './filmList.module.css'
 
 const FilmList = () => {
   const filmList = useAppSelector((state) => state.filmList);
-  console.log(filmList);
 
   return (
     <>
@@ -14,15 +13,15 @@ const FilmList = () => {
         {filmList.films?.length ? (
           filmList.films.map(e => 
             <FilmListItem 
-              key={e.imdID}
-              imdID={e.imdID} 
+              key={e.imdbID}
+              imdbID={e.imdbID} 
               Title={e.Title} 
               Year={e.Year} 
               Poster={e.Poster}
               Type={e.Type}
             />)
         ) : (
-          <li className={styles['li']}>Not found such films</li>
+          <li className={styles['li']}>Try to type film title</li>
         )}
       </ul>
     </>

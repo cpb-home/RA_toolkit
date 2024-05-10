@@ -11,11 +11,15 @@ export interface IFilmListReducer {
 export interface IFilmsListItem {
   Title?: string;
   Year?: string;
-  imdID: string;
+  imdbID: string;
   Type?: string;
   Poster?: string;
 }
 
 export interface IFilmListFetch {
   Search: IFilmsListItem[];
+}
+
+export interface IFavoriteReducer {
+  films: IFilmsListItem[];
 }
