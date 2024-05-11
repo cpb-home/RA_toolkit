@@ -7,7 +7,7 @@ const Nav = () => {
   return (
     <ul className={styles['nav']}>
       <li className={styles['li']}>
-        <NavLink className={selected} to='/'>Главная</NavLink>
+        <NavLink className={selected} to='/RA_toolkit/'>Главная</NavLink>
       </li>
       <li className={styles['li']}>
         <NavLink className={selected} to='/RA_toolkit/favorites'>Избранное</NavLink>

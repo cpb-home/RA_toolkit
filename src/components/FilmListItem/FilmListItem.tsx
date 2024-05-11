@@ -21,7 +21,7 @@ const FilmListItem = ({ imdbID, Title, Poster, Type, Year }: IFilmsListItem) => 
         {Poster !== 'N/A' ? <img src={Poster} alt='Image' /> : 'There`s no image'}
       </div>
       <div className={styles['infoCont']}>
-        <NavLink className={styles['title']} to={`/item/${imdbID}`}>
+        <NavLink className={styles['title']} to={`/RA_toolkit/item/${imdbID}`}>
           {Title}
         </NavLink>
         <div className={styles['text']}>Year: {Year}</div>
