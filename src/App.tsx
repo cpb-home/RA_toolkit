@@ -20,7 +20,7 @@ function App() {
     <Routes>
       <Route path='/' element={<Layout />}>
         <Route index element={<MainPage />} />
-        <Route path="/item" element={<ItemPage />} />
+        <Route path="/item/:imdbID" element={<ItemPage />} />
         <Route path="/favorites" element={<FavoritesPage />} />
       </Route>
     </Routes>

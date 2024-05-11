@@ -1,10 +1,16 @@
-import { useAppSelector } from "../../components/hooks"
+import { useAppDispatch, useAppSelector } from "../../components/hooks"
 import styles from '../../components/FilmList/filmList.module.css'
 import FilmListItem from "../../components/FilmListItem/FilmListItem";
+import { useEffect } from "react";
+import { clear } from "../../redux/slices/filmItem";
 
 const FavoritesPage = () => {
   const favorites = useAppSelector((state) => state.favorites.films);
-console.log(favorites);
+  const dispatch = useAppDispatch();
+  useEffect (() => {
+    dispatch(clear());
+  }, []);
+
   return (
     <>
       <ul className={styles['list']}>

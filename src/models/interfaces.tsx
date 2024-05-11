@@ -23,3 +23,20 @@ export interface IFilmListFetch {
 export interface IFavoriteReducer {
   films: IFilmsListItem[];
 }
+
+export interface IFilmReducer {
+  loading: boolean;
+  error: string;
+  currentFilm: IFilm[];
+}
+
+export interface IFilm {
+  Title: string,
+  Year: string,
+  Runtime: string,
+  Genre: string,
+  Director: string,
+  Actors: string,
+  imdbRating: string,
+  imdbID: string,
+}

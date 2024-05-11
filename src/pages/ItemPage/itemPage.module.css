@@ -1,0 +1,40 @@
+.item {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.imgCont {
+    width: 300px;
+}
+
+.imgCont img{
+    width: 100%;
+}
+
+.infoCont {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.otherInfo {
+    text-align: left;
+    margin-bottom: 100px;
+}
+
+.infoItem {
+    list-style-type: none;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.link a {
+    text-decoration: none;
+}

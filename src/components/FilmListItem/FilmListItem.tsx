@@ -21,16 +21,13 @@ const FilmListItem = ({ imdbID, Title, Poster, Type, Year }: IFilmsListItem) => 
         {Poster !== 'N/A' ? <img src={Poster} alt='Image' /> : 'There`s no image'}
       </div>
       <div className={styles['infoCont']}>
-        <NavLink className={styles['title']} to={`/item?${imdbID}`}>
+        <NavLink className={styles['title']} to={`/item/${imdbID}`}>
           {Title}
         </NavLink>
         <div className={styles['text']}>Year: {Year}</div>
         <div className={styles['text']}>Type: {Type}</div>
         <div className={styles['inFavorites']}>
-          <label>
-            {favorites.find(e => e.imdbID === imdbID) ? <a href='#' title='Удалить из избранного' onClick={aClickHandler}>Удалить из избранного</a> : <a href='#' title='Добавить в избранное' onClick={aClickHandler}>Добавить в избранное</a>}
-            
-          </label>
+          {favorites.find(e => e.imdbID === imdbID) ? <a href='#' title='Удалить из избранного' onClick={aClickHandler}>Удалить из избранного</a> : <a href='#' title='Добавить в избранное' onClick={aClickHandler}>Добавить в избранное</a>}
         </div>
       </div>
     </li>
