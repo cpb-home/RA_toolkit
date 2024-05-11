@@ -4,7 +4,7 @@ import FilmListItem from "../../components/FilmListItem/FilmListItem";
 
 const FavoritesPage = () => {
   const favorites = useAppSelector((state) => state.favorites.films);
-
+console.log(favorites);
   return (
     <>
       <ul className={styles['list']}>
