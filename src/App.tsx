@@ -18,7 +18,7 @@ function App() {
 
   return (
     <Routes>
-      <Route path='/' element={<Layout />}>
+      <Route path='/RA_toolkit' element={<Layout />}>
         <Route index element={<MainPage />} />
         <Route path="/item/:imdbID" element={<ItemPage />} />
         <Route path="/favorites" element={<FavoritesPage />} />
