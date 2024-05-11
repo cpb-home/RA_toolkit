@@ -10,7 +10,7 @@ const Nav = () => {
         <NavLink className={selected} to='/'>Главная</NavLink>
       </li>
       <li className={styles['li']}>
-        <NavLink className={selected} to='/favorites'>Избранное</NavLink>
+        <NavLink className={selected} to='/RA_toolkit/favorites'>Избранное</NavLink>
       </li>
       <li className={styles['item']}>
         <a href='https://www.omdbapi.com/' title='Тестовый сайт' target='blank'>Сайт фильмов</a>
